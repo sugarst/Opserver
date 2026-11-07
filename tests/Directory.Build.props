@@ -1,12 +1,13 @@
 <Project>
   <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <xUnitVersion>2.9.3</xUnitVersion>
+    <!-- xunit v3 test projects are stand-alone executables -->
+    <OutputType>Exe</OutputType>
+    <xUnitVersion>4.0.2</xUnitVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
-    <PackageReference Include="xunit" Version="$(xUnitVersion)" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+    <PackageReference Include="xunit.v3" Version="$(xUnitVersion)" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="4.0.1" />
   </ItemGroup>
 </Project>

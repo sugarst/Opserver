@@ -7,24 +7,24 @@
     <DebugType>embedded</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Dapper" Version="2.1.89" />
     <PackageReference Include="Enums.NET" Version="5.0.0" />
     <ProjectReference Include="..\..\vendor\Jil\Jil.csproj" />
     <!-- StackExchange.Utils.Http depends on Jil 2.17.0; exclude the package assets so the
          locally patched Jil assembly is the only Jil.dll in the output. -->
     <PackageReference Include="Jil" Version="2.17.0" ExcludeAssets="all" />
-    <!-- LTS release line. Legacy Encrypt=false semantics are preserved in Helpers/Connection.cs. -->
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.8" />
+    <!-- Legacy Encrypt=false semantics are preserved in Helpers/Connection.cs. -->
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.1" />
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="10.0.14" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.14" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.14" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.14" />
     <PackageReference Include="Microsoft.Net.Http.Headers" Version="10.0.14" />
-    <PackageReference Include="MiniProfiler.Shared" Version="4.3.13" />
+    <PackageReference Include="MiniProfiler.Shared" Version="4.5.8" />
     <PackageReference Include="Sigil" Version="5.0.0" />
     <!-- 3.x is required: the 2.x netstandard2.0 build hard-references System.Data.SqlClient at runtime. -->
     <PackageReference Include="StackExchange.Exceptional.Shared" Version="3.0.1" />
-    <PackageReference Include="StackExchange.Redis" Version="2.8.16" />
+    <PackageReference Include="StackExchange.Redis" Version="3.4.31" />
     <PackageReference Include="StackExchange.Utils.Http" Version="0.3.48" />
     <PackageReference Include="System.DirectoryServices" Version="10.0.14" />
     <PackageReference Include="System.Management" Version="10.0.14" />
@@ -35,7 +35,7 @@
     <Compile Update="Data\SQL\QueryPlans\ShowPlanXML.generated.cs" SubType="Code" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="8.0.0" />
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="10.0.403" />
     <PackageReference Update="Nerdbank.GitVersioning" Version="3.10.94" />
   </ItemGroup>
 </Project>
