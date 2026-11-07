@@ -10,5 +10,10 @@
     <!-- mtp-off keeps VSTest / dotnet test; the default xunit.v3 package switches to Microsoft.Testing.Platform -->
     <PackageReference Include="xunit.v3.mtp-off" Version="$(xUnitVersion)" />
     <PackageReference Include="xunit.runner.visualstudio" Version="4.0.1" />
+    <!-- VSTest data collector; enable with the XPlat Code Coverage collector option on dotnet test -->
+    <PackageReference Include="coverlet.collector" Version="10.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
