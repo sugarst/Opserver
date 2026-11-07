@@ -13,8 +13,8 @@
     <!-- StackExchange.Utils.Http depends on Jil 2.17.0; exclude the package assets so the
          locally patched Jil assembly is the only Jil.dll in the output. -->
     <PackageReference Include="Jil" Version="2.17.0" ExcludeAssets="all" />
-    <!-- Legacy Encrypt=false semantics are preserved in Helpers/Connection.cs. -->
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.1" />
+    <!-- 6.1 is the LTS line (supported through 2028-08). Legacy Encrypt=false semantics are preserved in Helpers/Connection.cs. -->
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.8" />
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="10.0.14" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.14" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.14" />

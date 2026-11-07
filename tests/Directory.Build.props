@@ -7,7 +7,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
-    <PackageReference Include="xunit.v3" Version="$(xUnitVersion)" />
+    <!-- mtp-off keeps VSTest / dotnet test; the default xunit.v3 package switches to Microsoft.Testing.Platform -->
+    <PackageReference Include="xunit.v3.mtp-off" Version="$(xUnitVersion)" />
     <PackageReference Include="xunit.runner.visualstudio" Version="4.0.1" />
   </ItemGroup>
 </Project>
