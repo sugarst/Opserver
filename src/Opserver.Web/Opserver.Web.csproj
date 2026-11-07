@@ -10,7 +10,8 @@
     <PackageReference Include="BuildWebCompiler" Condition="'$(OS)' == 'Windows_NT'" Version="1.12.405" PrivateAssets="all" />
     <PackageReference Include="MiniProfiler.AspNetCore.Mvc" Version="4.3.13" />
     <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="8.23.0" />
-    <PackageReference Include="StackExchange.Exceptional.AspNetCore" Version="2.2.35" />
+    <!-- Keep in sync with Core: 3.x drops the System.Data.SqlClient runtime dependency. -->
+    <PackageReference Include="StackExchange.Exceptional.AspNetCore" Version="3.0.1" />
     <PackageReference Include="System.DirectoryServices.AccountManagement" Version="10.0.14" />
     <Reference Include="System.Management" />
   </ItemGroup>
